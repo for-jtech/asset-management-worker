@@ -4,7 +4,7 @@ import { getJSON } from './util';
 const KIS_BASE_URL = 'https://openapi.koreainvestment.com:9443';
 
 async function getAccessToken(appkey: string, appsecret: string) {
-	console.log(appkey, appsecret);
+	// console.log(appkey, appsecret);
 	const response = await fetch(`${KIS_BASE_URL}/oauth2/tokenP`, {
 		method: 'POST',
 		headers: {
